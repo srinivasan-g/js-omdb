@@ -25,5 +25,5 @@ var notifyWhenDone = function(err) {
 };
 
 var pathToData = "visitorInfo.visitorName";
-
+lpTag.agentSDK.init({});
 lpTag.agentSDK.bind(pathToData, updateCallback, notifyWhenDone);
