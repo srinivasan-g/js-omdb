@@ -1,7 +1,7 @@
 // Import stylesheets
 import "./style.css";
 // Write Javascript code!
-pathToData = "chatTranscript.lines";
+var pathToData = "chatTranscript.lines";
 console.log(">>> pathToData: ", pathToData);
 const appDiv = document.getElementById("app");
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
@@ -24,6 +24,5 @@ var notifyWhenDone = function(err) {
   // or when the action terminated with an error.
 };
 
-var pathToData = "visitorInfo.visitorName";
 lpTag.agentSDK.init({});
 lpTag.agentSDK.bind(pathToData, updateCallback, notifyWhenDone);
