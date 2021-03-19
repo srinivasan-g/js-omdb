@@ -5,7 +5,7 @@ pathToData = "chatTranscript.lines";
 const updateCallback = function(data) {
   console.log("***updateCallback****");
   // Do something with the returning data
-  console.log(JSON.stringify(data));
+  // console.log(JSON.stringify(data));
   const path = data.key;
   const value = data.newValue;
   const index = value.length - 1;
