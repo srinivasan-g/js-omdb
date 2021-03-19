@@ -17,11 +17,38 @@ const updateCallback = function(data) {
     .then(resut => {
       // console.log(resut)
       appDiv.innerHTML =
-        "div>Title: " +
-        resut.Title +
-        "</div> <br>" +
         "<div>Title: " +
         resut.Title +
+        "</div> <br>" +
+        "<div>Year: " +
+        resut.Year +
+        "</div>" +
+        "<div>Rated: " +
+        resut.Rated +
+        "</div>";
+      "<div>Released: " +
+        resut.Released +
+        "</div>" +
+        "<div>Runtime: " +
+        resut.Runtime +
+        "</div>" +
+        "<div>Genre: " +
+        resut.Genre +
+        "</div>" +
+        "<div>Director: " +
+        resut.Director +
+        "</div>" +
+        "<div>Actors: " +
+        resut.Actors +
+        "</div>" +
+        "<div>Plot: " +
+        resut.Plot +
+        "</div>" +
+        "<div>Awards: " +
+        resut.Awards +
+        "</div>" +
+        "<div>imdbRating: " +
+        resut.imdbRating +
         "</div>";
     });
   // }
@@ -52,3 +79,29 @@ lpTag.agentSDK.bind(pathToData, updateCallback, notifyWhenDone);
 // text: "hi"
 // time: 1616153108071
 // type: "line"
+
+// Actors: "Sharman Joshi, Amrita Arora, Sohail Khan, Isha Koppikar"
+// Awards: "N/A"
+// BoxOffice: "N/A"
+// Country: "India"
+// DVD: "05 Apr 2018"
+// Director: "Atul Agnihotri"
+// Genre: "Drama, Romance"
+// Language: "Hindi"
+// Metascore: "N/A"
+// Plot: "Call-center workers receive a phone call from God."
+// Poster: "https://m.media-amazon.com/images/M/MV5BZGM5NjliODgtODVlOS00OWZmLWIzYzMtMTI2OWIzMTM1ZGRhXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
+// Production: "N/A"
+// Rated: "N/A"
+// Ratings: (2) [{…}, {…}]
+// Released: "10 Oct 2008"
+// Response: "True"
+// Runtime: "129 min"
+// Title: "Hello"
+// Type: "movie"
+// Website: "N/A"
+// Writer: "Atul Agnihotri (screenplay), Chetan Bhagat (additional dialogue), Chetan Bhagat (book), Jalees Sherwani (lyrics), Alok Upadhyay (additional dialogue)"
+// Year: "2008"
+// imdbID: "tt1087856"
+// imdbRating: "3.3"
+// imdbVotes: "1,892";
