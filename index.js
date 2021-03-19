@@ -1,11 +1,3 @@
-// Import stylesheets
-import "./style.css";
-// Write Javascript code!
-var pathToData = "chatTranscript.lines";
-console.log(">>> pathToData: ", pathToData);
-const appDiv = document.getElementById("app");
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
-
 var updateCallback = function(data) {
   console.log("***updateCallback****");
   // Do something with the returning data
