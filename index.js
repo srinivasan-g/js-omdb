@@ -1,6 +1,7 @@
 const appDiv = document.getElementById("app");
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
-import { fromFetch } from "rxjs/fetch";
+// import { fromFetch } from "rxjs/fetch";
+const { fromFetch } = rxjs;
 pathToData = "chatTranscript.lines";
 
 const updateCallback = function(data) {
