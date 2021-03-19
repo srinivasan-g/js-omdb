@@ -9,13 +9,12 @@ const updateCallback = function(data) {
   console.log(JSON.stringify(data));
   const path = data.key;
   const value = data.newValue;
-  const index = value.length -1;
+  const index = value.length - 1;
   const messageObj = value[index];
 
-  if(messageObj.source != 'agent' ) {
-  console.log(messageOb.text);
+  if (messageObj.source === "visitor") {
+    console.log(messageObj.text);
   }
-
 
   // called each time the value is updated.
   // If there's an existing value when bind is called - this callback
