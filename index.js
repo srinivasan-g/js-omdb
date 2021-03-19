@@ -3,18 +3,20 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 pathToData = "chatTranscript.lines";
 
-var updateCallback = function(data) {
+const updateCallback = function(data) {
   console.log("***updateCallback****");
   // Do something with the returning data
-  var path = data.key;
-  var value = data.newValue;
+  console.log(JSON.stringify(data));
+  const path = data.key;
+  const value = data.newValue;
   console.log(path);
+  console.log(value);
   // called each time the value is updated.
   // If there's an existing value when bind is called - this callback
   // will be called with the existing value
 };
 
-var notifyWhenDone = function(err) {
+const notifyWhenDone = function(err) {
   if (err) {
     // Do something with the error
   }
