@@ -19,35 +19,25 @@ const updateCallback = function(data) {
           appDiv.innerHTML =
             "<div>Title: " +
             resut.Title +
-            "</div>" +
-            "<div>Year: " +
+            "</div> <div>Year: " +
             resut.Year +
-            "</div>" +
-            "<div>Rated: " +
+            "</div> <div>Rated: " +
             resut.Rated +
-            "</div>" +
-            "<div>Released: " +
+            "</div> <div>Released: " +
             resut.Released +
-            "</div>" +
-            "<div>Runtime: " +
+            "</div> <div>Runtime: " +
             resut.Runtime +
-            "</div>" +
-            "<div>Genre: " +
+            "</div> <div>Genre: " +
             resut.Genre +
-            "</div>" +
-            "<div>Director: " +
+            "</div> <div>Director: " +
             resut.Director +
-            "</div>" +
-            "<div>Actors: " +
+            "</div> <div>Actors: " +
             resut.Actors +
-            "</div>" +
-            "<div>Plot: " +
+            "</div> <div>Plot: " +
             resut.Plot +
-            "</div>" +
-            "<div>Awards: " +
+            "</div> <div>Awards: " +
             resut.Awards +
-            "</div>" +
-            "<div>imdbRating: " +
+            "</div> <div>imdbRating: " +
             resut.imdbRating +
             "</div>";
         } else {
