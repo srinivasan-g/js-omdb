@@ -14,7 +14,7 @@ const updateCallback = function(data) {
   // if (messageObj.source === "visitor") {
   fetch("https://www.omdbapi.com?t=" + messageObj.text + "&apikey=a5599b52")
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(resut => console.log(resut));
   // }
 
   // called each time the value is updated.
