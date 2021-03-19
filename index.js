@@ -15,7 +15,7 @@ const updateCallback = function(data) {
       .then(response => response.json())
       .then(resut => {
         // console.log(resut)
-        if (resut.Response) {
+        if (resut.Response === "True") {
           appDiv.innerHTML =
             "<div>Title: " +
             resut.Title +
