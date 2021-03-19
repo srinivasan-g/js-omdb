@@ -1,5 +1,5 @@
 const appDiv = document.getElementById("app");
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+
 pathToData = "chatTranscript.lines";
 
 const updateCallback = function(data) {
@@ -14,7 +14,12 @@ const updateCallback = function(data) {
   // if (messageObj.source === "visitor") {
   fetch("https://www.omdbapi.com?t=" + messageObj.text + "&apikey=a5599b52")
     .then(response => response.json())
-    .then(resut => console.log(resut));
+    .then(resut => {
+      // console.log(resut)
+      appDiv.innerHTML =
+        "div>Title: {resut.Title}</div> <br>" +
+        "<div>Title: {resut.Title}</div>";
+    });
   // }
 
   // called each time the value is updated.
