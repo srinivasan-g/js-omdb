@@ -17,8 +17,12 @@ const updateCallback = function(data) {
     .then(resut => {
       // console.log(resut)
       appDiv.innerHTML =
-        "div>Title: {resut.Title}</div> <br>" +
-        "<div>Title: {resut.Title}</div>";
+        "div>Title: " +
+        resut.Title +
+        "</div> <br>" +
+        "<div>Title: " +
+        resut.Title +
+        "</div>";
     });
   // }
 
