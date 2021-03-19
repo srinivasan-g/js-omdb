@@ -15,40 +15,44 @@ const updateCallback = function(data) {
       .then(response => response.json())
       .then(resut => {
         // console.log(resut)
-        appDiv.innerHTML =
-          "<div>Title: " +
-          resut.Title +
-          "</div>" +
-          "<div>Year: " +
-          resut.Year +
-          "</div>" +
-          "<div>Rated: " +
-          resut.Rated +
-          "</div>" +
-          "<div>Released: " +
-          resut.Released +
-          "</div>" +
-          "<div>Runtime: " +
-          resut.Runtime +
-          "</div>" +
-          "<div>Genre: " +
-          resut.Genre +
-          "</div>" +
-          "<div>Director: " +
-          resut.Director +
-          "</div>" +
-          "<div>Actors: " +
-          resut.Actors +
-          "</div>" +
-          "<div>Plot: " +
-          resut.Plot +
-          "</div>" +
-          "<div>Awards: " +
-          resut.Awards +
-          "</div>" +
-          "<div>imdbRating: " +
-          resut.imdbRating +
-          "</div>";
+        if (resut.Response) {
+          appDiv.innerHTML =
+            "<div>Title: " +
+            resut.Title +
+            "</div>" +
+            "<div>Year: " +
+            resut.Year +
+            "</div>" +
+            "<div>Rated: " +
+            resut.Rated +
+            "</div>" +
+            "<div>Released: " +
+            resut.Released +
+            "</div>" +
+            "<div>Runtime: " +
+            resut.Runtime +
+            "</div>" +
+            "<div>Genre: " +
+            resut.Genre +
+            "</div>" +
+            "<div>Director: " +
+            resut.Director +
+            "</div>" +
+            "<div>Actors: " +
+            resut.Actors +
+            "</div>" +
+            "<div>Plot: " +
+            resut.Plot +
+            "</div>" +
+            "<div>Awards: " +
+            resut.Awards +
+            "</div>" +
+            "<div>imdbRating: " +
+            resut.imdbRating +
+            "</div>";
+        } else {
+          appDiv.innerHTML = resut.Error;
+        }
       })
       .catch(err => {
         console.log(err);
