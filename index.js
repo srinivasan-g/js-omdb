@@ -1,6 +1,6 @@
 const appDiv = document.getElementById("app");
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
-
+import { fromFetch } from "rxjs/fetch";
 pathToData = "chatTranscript.lines";
 
 const updateCallback = function(data) {
@@ -14,6 +14,14 @@ const updateCallback = function(data) {
 
   if (messageObj.source === "visitor") {
     console.log(messageObj.text);
+    const data$ = fromFetch("https://api.github.com/users?per_page=5", {
+      selector: response => response.json()
+    });
+
+    data$.subscribe({
+      next: result => console.log(result),
+      complete: () => console.log("done")
+    });
   }
 
   // called each time the value is updated.
