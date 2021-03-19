@@ -1,7 +1,8 @@
 const appDiv = document.getElementById("app");
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // import { fromFetch } from "rxjs/fetch";
-const { fromFetch } = rxjs;
+const { from } = rxjs;
+const { fromFetch } = rxjs - fetch;
 pathToData = "chatTranscript.lines";
 
 const updateCallback = function(data) {
@@ -14,15 +15,9 @@ const updateCallback = function(data) {
   const messageObj = value[index];
 
   // if (messageObj.source === "visitor") {
-    console.log(messageObj.text);
-    const data$ = fromFetch("https://api.github.com/users?per_page=5", {
-      selector: response => response.json()
-    });
-
-    data$.subscribe({
-      next: result => console.log(result),
-      complete: () => console.log("done")
-    });
+  fetch("https://www.omdbapi.com?t=" + messageObj.text + "&apikey=a5599b52")
+    .then(response => response.json())
+    .then(data => console.log(data));
   // }
 
   // called each time the value is updated.
