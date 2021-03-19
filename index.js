@@ -1,5 +1,4 @@
 const appDiv = document.getElementById("app");
-appDiv.innerHTML = "welcome to move search";
 pathToData = "chatTranscript.lines";
 
 const updateCallback = function(data) {
