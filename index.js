@@ -25,8 +25,8 @@ const updateCallback = function(data) {
         "</div>" +
         "<div>Rated: " +
         resut.Rated +
-        "</div>";
-      "<div>Released: " +
+        "</div>" +
+        "<div>Released: " +
         resut.Released +
         "</div>" +
         "<div>Runtime: " +
