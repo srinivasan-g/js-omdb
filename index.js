@@ -18,7 +18,7 @@ const updateCallback = function(data) {
         appDiv.innerHTML =
           "<div>Title: " +
           resut.Title +
-          "</div> <br>" +
+          "</div>" +
           "<div>Year: " +
           resut.Year +
           "</div>" +
