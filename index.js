@@ -1,6 +1,6 @@
 const appDiv = document.getElementById("app");
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
-
+pathToData = "chatTranscript.lines";
 var updateCallback = function(data) {
   console.log("***updateCallback****");
   // Do something with the returning data
