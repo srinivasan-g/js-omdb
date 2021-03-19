@@ -13,7 +13,7 @@ const updateCallback = function(data) {
   const index = value.length - 1;
   const messageObj = value[index];
 
-  if (messageObj.source === "visitor") {
+  // if (messageObj.source === "visitor") {
     console.log(messageObj.text);
     const data$ = fromFetch("https://api.github.com/users?per_page=5", {
       selector: response => response.json()
@@ -23,7 +23,7 @@ const updateCallback = function(data) {
       next: result => console.log(result),
       complete: () => console.log("done")
     });
-  }
+  // }
 
   // called each time the value is updated.
   // If there's an existing value when bind is called - this callback
